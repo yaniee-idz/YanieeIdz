@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="first">
+        <div class="navbar">
+            <h1>FAMILY & FRIENDS</h1>
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="galleryPage.html"> Gallery </a></li>
+                <li><a href="famHomies.html"> Family & 
+                Friends </a></li>
+                <li><a href="aboutme.html"> About Me </a></li>
+            </ul>
+        </div>
+        <div class="content-homies">
+            <h1>MY FAMILY & FRIENDS</h1>
+        <br><br><br>
+         <a href="#fam">
+                <button type="button"><span></span> 
+            My Family</button></a>
+            <a href="#homies">
+                <button type="button"><span></span> 
+            Homies</button></a>
+        </div>
+   </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <h1 id="fam">My Family</h1>
+        </div><br><br><br><br>
+        <div class="fullImg" id="fullImgBox">
+            <img src="img/yanieefav1.jpeg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="gallery">
+            <img src="img/fam1.jpg" 
+            onclick="openFullImg(this.src)">
+            <img src="img/fam2.jpg" 
+            onclick="openFullImg(this.src)">
+            <img src="img/famsis.jpeg" 
+            onclick="openFullImg(this.src)">
+            <img src="img/fampapa.jpeg" 
+            onclick="openFullImg(this.src)">          
+        </div>
+        <div class="container-msg">
+        <section class="parg">
+            <p>This picture right here is my home, everything and life. They are the reason why I keep trying to do my best so that they will be proud of me. They're also the reason why i need to be a successful man para makatulong sa kanila at makabawi. I love them my home.❤️❤️❤️ </p>
+        </section>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <h1 id="homies"><span></span>Homies</h1>
+        </div>
+        <div class="fullImg" id="fullImgBox">
+            <img src="img/friends1.jpeg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="gallery">
+            <img src="img/friends1.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends2.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends3.jpg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends4.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends5.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends6.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends7.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends8.jpeg"
+            onclick="openFullImg(this.src)">
+        </div>
+        <div class="container-msg">
+        <section class="parg">
+            <p>My homies, when I was a freshmen in college they are the first person I've talked to and become friends. We laugh, learn, and facing the hardest times but when we all together we believe that we can face every challenges together. They're the reason why i love to go to school because of them. I love them💛💚💙</p>
+        </section>
+        </div>
+ <script>
+    var fullImgBox = document.getElementById
+                        ("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex"
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>     
+</body>
+</html>

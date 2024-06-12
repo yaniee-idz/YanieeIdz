@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+<div class="first">
+   <div class="navbar">
+       <h1>GALLERY</h1>
+          <ul>
+             <li><a href="index.html"> Home </a></li>
+             <li><a href="galleryPage.html"> Gallery </a>
+             </li>
+             <li><a href="famHomies.html"> Family & 
+                Friends </a></li>
+             <li><a href="aboutme.html"> About Me </a></li>
+           </ul>
+   </div>
+          
+   <div class="content-gallery">
+        <h1>MY PHOTOS</h1>
+        <br><br><br>
+           <a href="#favPhotos">
+               <button type="button"><span></span> 
+               Favorite Photos</button></a>
+           <a href="#wacky">
+                <button type="button"><span></span> 
+                Wacky Phots</button></a>
+           <a href="#homies"><button type="button">
+                <span></span>W/ Homie's Photos </button>
+                </a>
+    </div>
+</div>
+        
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>        
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>        
+    <div>
+        <h1 id="favPhotos">My Favorite Photos</h1>        
+    </div>   
+        <div class="fullImg" id="fullImgBox">
+            <img src="img/yanieefav1.jpeg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="gallery">
+            <img src="img/yanieefav1.jpeg" 
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav2.jpeg"
+            onclick="openFullImg(this.src)"> 
+            <img src="img/yanieefav3.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav4.jpg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav5.jpg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav6.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav7.JPG"
+            onclick="openFullImg(this.src)"> 
+            <img src="img/yanieefav9.jpg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav10.jpg"
+            onclick="openFullImg(this.src)">    
+            <img src="img/yanieefav11.jpg" 
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav12.JPG"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefav13.jpeg"
+            onclick="openFullImg(this.src)"> 
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        
+        
+        <div>
+            <h1 id="wacky"><span></span>Wacky Photos<br>Of Mine</h1>
+        </div>
+        <div class="fullImg" id="fullImgBox">
+            <img src="img/yanieefun1.jpeg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="gallery">
+            <img src="img/yanieefun1.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefun2.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefun3.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefun4.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefun5.png"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefun6.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefun7.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/yanieefun8.jpg"
+            onclick="openFullImg(this.src)">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <h1 id="homies"><span></span>Me With Homies</h1>
+        </div>
+        <div class="fullImg" id="fullImgBox">
+            <img src="img/friends1.jpeg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="gallery">
+            <img src="img/friends1.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends2.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends3.jpg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends4.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends5.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends6.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends7.jpeg"
+            onclick="openFullImg(this.src)">
+            <img src="img/friends8.jpeg"
+            onclick="openFullImg(this.src)">
+        </div>
+    </div>
+    
+
+<script>
+    var fullImgBox = document.getElementById
+                        ("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex"
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+</body>
+</html>
